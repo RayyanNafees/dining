@@ -14,14 +14,16 @@ const days = [
   "saturday",
   "sunday",
 ];
+
 export const Carousel = ({
   menu = menuSU.menu,
 }: {
   menu?: Menu[];
 }) => {
-  const index = useSignal(new Date().getDay() - 1);
-  const left = computed(() => days.at((index.value - 1) % days.length));
-  const right = computed(() => days.at((index.value + 1) % days.length));
+  const today = useSignal(new Date().getDay() - 1);
+  const index = useSignal(today.value);
+  const left = computed(() => days.at((today.value - 1) % days.length));
+  const right = computed(() => days.at((today.value + 1) % days.length));
 
   const leftId = useSignal(left);
   const rightId = useSignal(right);
@@ -31,7 +33,7 @@ export const Carousel = ({
     if (scroll.current) {
       scroll.current.scrollTo({
         behavior: "smooth",
-        left: index.value * scroll.current?.scrollHeight,
+        left: (today.value-2) * scroll.current?.scrollHeight,
       });
     }
   });
@@ -54,7 +56,7 @@ export const Carousel = ({
                 href={`#${day}`}
                 key={day}
                 class={`grid place-items-center w-8 h-8 text-lg focus:(border border-slate-50) last:text-red-900 uppercase rounded-lg  ${
-                  days[index.value] === day
+                  days[today.value] === day
                     ? "bg-slate-50 text-slate-900 scale-110 "
                     : "text-slate-900  bg-slate-500"
                 }`}
@@ -77,11 +79,11 @@ export const Carousel = ({
               >
                 <ul class="grid gap-2 px-4">
                   <p class="text-xs font-semibold text-left uppercase text-slate-200/30">
-                    {day === days[index.value]
+                    {day === days[today.value]
                       ? "Today"
-                      : day === days[index.value + 1]
+                      : day === days[today.value + 1]
                       ? "Tomorrow"
-                      : day === days[index.value - 1]
+                      : day === days[today.value - 1]
                       ? "Yesterday"
                       : ""}
                   </p>

@@ -18,6 +18,10 @@ export const TriangleLeft = ({
     href={href}
     onClick={() => {
       right ? index.value++ : index.value--;
+      document.body.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     }}
     // {...props}
     containerCls={containerCls}
