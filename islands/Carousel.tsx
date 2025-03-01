@@ -35,6 +35,7 @@ export const Carousel = ({
         behavior: "smooth",
         left: (today.value-2) * scroll.current?.scrollHeight,
       });
+      console.log(days[today.value]);
     }
   });
   return (
