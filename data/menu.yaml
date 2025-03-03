@@ -1,29 +1,28 @@
 menu:
   - day: monday
-    breakfast: Bread Omlet, Jam & Tea
-    lunch: Qorma / Sabzi. Daai, Rice & Roti
-    dinner: Aloo sabzi fry, full Daal. Rice & Roti
+    breakfast: Biriyani
+    lunch: Chana
+    dinner: Chicken Qorma/Matar Paneer
   - day: tuesday
     breakfast: Poori Sabzi & Tea
-    lunch: Loki Chana ki Daal/Seasonal Sabzi, Rice - Daal & Roti
-    dinner: Aloo Gosht, Sabzi. Rice Daal & Roti
+    lunch: Chana
+    dinner: Meat Qorma/Rajma Sabzi
   - day: wednesday
-    breakfast: Chhola Bhatoora. Achar & Tea
-    lunch: Aloo Bharta. Black Daal. Rice. Raita & Roti
-    dinner: Chiken Kaali Mirch Chicken Qorma. Matar Paneer, Daal, Rice & Roti
+    breakfast: Chicken Biriyani
+    lunch: Chana
+    dinner: Achari Chicken/Matar Paneer
   - day: thursday
-    breakfast: Bread Pakoda, Sauce & Tea
-    lunch: Aloo Matar Full. Daal, Rice & Roti
-    dinner: Meat Stew / Kadhai, Gosht, Sabzi, Rice, Daal & Roti
+    breakfast: Puri Sabzi, Sheer & Tea
+    lunch: Chana
+    dinner: Chicken Biriyani/Matar Pulao , Raita
   - day: friday
-    breakfast: Chhola Bhatoora, Achar & Tea
-    lunch: Chiken Biryani. Matar Pulao. Raita Chatni
-    dinner: Chicken Qorma / Butter Chicken / Chilli Paneer /     Shahi Paneer, Matar Pulaw Sweet Dish,  Raita & Roti
+    breakfast: Seasonal Sabzi
+    lunch: Chana
+    dinner: Chicken Kali Mirch, Shahi Paneer, Matar Pulaw Sweet Dish,  Raita & Roti
   - day: saturday
-    breakfast: Chana - Daliya, Tea
-    lunch: Aloo Rajma, Daal, Rice & Roti
-    dinner: Daal Gosht, Saba, Rice. Daal & Roti
+    breakfast: Chicken Biriyani
+    lunch: Qabuli Chana
+    dinner: Daal Gosht, Chana Masala, Rice. Daal & Roti
   - day: sunday
-    breakfast: Poon Sabzi, Halwa & Tea
-    lunch: Chicken Biryani, Matar Pulao, Raita & Chatni
-    dinner: Egg Aloo, Sabzi, Rice Daal & Roti
+    breakfast: Meat Qorma / Rajma Sabzi
+    lunch: Chana
